@@ -1,0 +1,12 @@
+.topic{
+    color: blue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: cadetblue;
+    text-align: center;
+    font-size:  1000%;
+    margin-top: 50px;
+}
+
+.app{
+    color: chartreuse;
+}
