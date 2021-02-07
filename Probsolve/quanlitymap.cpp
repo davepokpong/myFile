@@ -6,7 +6,7 @@ char area[31][31];
 bool visited[31][31];
 
 void init(){
-    int n, m, i, k, ground;
+    int n, m, i, j, ground;
     cin >> n >> m;
 
     for (i=0; i<n; i++){
