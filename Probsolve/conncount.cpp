@@ -31,10 +31,6 @@ int main(){
 
     cin >> n >> m;
 
-    // for (int i=1; i<n+1; i++){
-    //     graph[i] = i;
-    // }
-
     for (int i=0; i<m; i++){
         cin >> nodea >> nodeb;
         
