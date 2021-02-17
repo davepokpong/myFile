@@ -44,8 +44,16 @@ def getall():
     
     return {'result': output}
 
-# @app.route('/data', methods['POST'])
-# def input():
+@app.route('/data', methods=['POST'])
+def insert():
+    data = request.json
+
+    if 'firstname' in data and 'lastname' in data and 'pplnum' in data:
+        myCollection.insert(data)
+        return {'result' : 'success'}
+    else:
+        return {'result' : 'false'}
+
 
 
 # @app.route('/store', methods=['POST'])
