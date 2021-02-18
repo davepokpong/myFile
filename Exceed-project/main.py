@@ -1,17 +1,21 @@
 from flask import Flask, request
 from flask_pymongo import PyMongo
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+cors = CORS(app, resources={r"/": {"origins": "*"}})
 app.config['MONGO_URI'] = 'mongodb://exceed_group12:nhm88g6s@158.108.182.0:2255/exceed_group12'
 mongo = PyMongo(app)
 
 myCollection = mongo.db.data
 
 @app.route('/', methods=['GET'])
+@cross_origin()
 def hello():
     return{'result':'hello'}
 
 @app.route('/data', methods=['GET'])
+@cross_origin()
 def getall():
     f_name = request.args.get('firstname', -1)
     l_name = request.args.get('lastname', -1)
@@ -45,6 +49,7 @@ def getall():
     return {'result': output}
 
 @app.route('/data', methods=['POST'])
+@cross_origin()
 def insert():
     data = request.json
 
