@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
+
+#app-name {
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background-color: #5154fc;
+    height: 85px;
+}
+
+body {
+    background-color: #ffffff;
+    /* background: linear-gradient(180deg, #f5f5f5 0%, #e7e9e9 100%); */
+}
+
+.my-btn {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 20px 10px;
+}
+
+.submit-btn {
+    font-family: 'Asap', sans-serif;
+    font-size: medium;
+    transition-duration: 0.3s;
+    background-color: #009e77;
+    border: 1px solid #009e77;
+    color: white;
+}
+
+.test-btn {
+    font-family: 'Asap', sans-serif;
+    font-size: medium;
+    transition-duration: 0.3s;
+    background-color: #009e77;
+    border: 1px solid #009e77;
+    color: white;
+}
+
+.reset-btn {
+    font-family: 'Asap', sans-serif;
+    font-size: medium;
+    transition-duration: 0.3s;
+    background-color: #009e77;
+    border: 1px solid #009e77;
+    color: white;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 2%;
+    margin: 1% 0;
+    border: 1px  solid gray;
+    border-radius: 5px;
+}
+
+#errormsg {
+    padding-top: 10px;
+    height: 30px;
+    margin-top: 2px;
+    color: crimson;
+}  
+
+/* .hr {
+    margin-top: 5%;
+} */
+
+/* input[type=text][name=firstname] {
+    width: 100%;
+    padding: 10px 2%;
+    margin: 1% 0;
+    border: 1px  solid gray;
+    border-radius: 5px;
+}
+
+input[type=text][name=lastname] {
+    width: 100%;
+    padding: 10px 2%;
+    margin: 1% 0;
+    border: 1px  solid gray;
+    border-radius: 5px;
+}
+
+input[type=text][name=pplnum] {
+    width: 10%;
+    padding: 10px 2%;
+    margin: 1% 18% 1% 0%;
+    border: 1px  solid gray;
+    border-radius: 5px;
+}
+input[type=text][name=tel] {
+    width: 30%;
+    padding: 10px 2%;
+    margin: 1% 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+} */
+
+.my-form {
+    font-size: large;
+    font-family: 'Athiti', sans-serif;
+    margin: 1% 30%;
+    color: rgb(70, 86, 179);
+}
+
+.submit-btn:hover {
+    background-color: #91ca26;
+    border: 1px solid #91ca26;
+    color: rgb(255, 255, 255);
+}
+
+.reset-btn:hover {
+    background-color: #ad1d1d;
+    border: 1px solid #ad1d1d;
+    color: rgb(255, 255, 255);
+}
+
+.btn-sec {
+    display: flex;
+    justify-content: center;
+}
