@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@500&display=swap');
+
+*{
+    font-family: 'Athiti', sans-serif;
+}
+body{
+    overflow-x: scroll;
+}
+.my-btn {
+    display: flex;
+}
+
+.app{
+    display: flex;
+    justify-content: center;
+}
+
+#store-list{
+    justify-content: left;
+
+}
+
+#store-info{
+    display: flex;
+    background-color: rgb(221, 153, 27);
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    font-family: 'Athiti', sans-serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.card-line {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+.card-text1,.card-text2 {
+    font-family: 'Athiti', sans-serif;
+}
+
+.nav-link {
+    font-size:  large;
+    font-weight: bold;
+    /* padding-right: 0%; */
+    border-bottom: 0.75px solid rgba(241,240,236,0.6);
+    border-radius: 0.15rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.col-2{
+    padding: 0%;
+}
+.card{
+    border: none;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+#head {
+    display: flex;
+}
+
+.table-dark-blue {
+    --bs-table-bg: rgb(195, 119, 230);
+    --bs-table-striped-bg: rgb(223, 147, 241);
+    --bs-table-striped-color: #fff;
+    --bs-table-active-bg: #0d2b42;
+    --bs-table-active-color: #fff;
+    --bs-table-hover-bg: rgb(161, 68, 248);
+    --bs-table-hover-color: #fff;
+    color: #fff;
+    border-color: rgb(150, 83, 212);
+}
+
+.tHead {
+    --bs-table-bg: rgb(173, 96, 218);
+}

@@ -1,0 +1,33 @@
+/* .app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}   */
+body{
+    margin-top: 5%;
+}
+.container-fluid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.my-btn{
+    padding: 20% 30%;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+  
+    font-size: x-large ;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.card-title{
+    text-align: center;
+}
