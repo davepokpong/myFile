@@ -17,10 +17,11 @@ loop1:
     lw      s4, 0(s5)           # s4 คือ A[i]
     addi    s3, s3, 4           # s3 += 4
 
-    # printf("%d", A[i]);
+    # printf("%d", A[i])
     addi    a0, x0, 1          
     mv      a1, s4
     ecall
+    # printf("\n")
     addi    a0, x0, 4          
     la      a1, space
     ecall
@@ -29,7 +30,7 @@ loop1:
     j loop1
 
 end_loop1:
-    # printf("\n");
+    # printf("\n")
     addi    a0, x0, 4          
     la      a1, newline
     ecall
@@ -47,7 +48,7 @@ loop2:
     addi    s6, s1, -1          # j = i-1
 
     slli    s7, s6, 2           
-    add     s7, a0, s7
+    add     s7, s0, s7
     lw      s8, 0(s7)           # s8 เก็บ A[j]
 
     while:
@@ -71,7 +72,9 @@ loop2:
         j loop2
 
 end_loop2:    
-    addi s1, s0, 0              # i=0
+    addi    s1, x0, 0           # i=0
+    addi    s3, x0, 0           # s3: 0
+
 
 loop3:
     bge     s1, s2, end_loop3   # ถ้า s1>s2 ให้ทำ end_loop3
@@ -80,10 +83,11 @@ loop3:
     lw      s4, 0(s5)           # s4 คือ A[i]
     addi    s3, s3, 4           # s3 += 4
 
-    # printf("%d", A[i]);
+    # printf("%d", A[i])
     addi    a0, x0, 1          
     mv      a1, s4
     ecall
+    # printf("\n")
     addi    a0, x0, 4          
     la      a1, space
     ecall
@@ -92,7 +96,11 @@ loop3:
     j loop3
 
 end_loop3:
-    # printf("\n");
+    # printf("\n")
     addi    a0, x0, 4          
     la      a1, newline
+    ecall
+    
+    # terminate ecall 
+    addi    a0, x0, 10
     ecall
